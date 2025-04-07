@@ -48,7 +48,7 @@ jobs:
           commit-message: "Release version ${{ steps.get_version.outputs.VERSION }}"
           delete-branch: true
           merge-method: squash
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Run tests
         run: mvn test
